@@ -20,7 +20,7 @@
     </a>
 </div>
 
-### 🗒️ Keybinded is a simple keybinding based on the ALT key. It take come keybinding from vim and helix.
+### 🗒️ Keybinded is a simple keybinding based on the ALT key. It take inspiration of some keybindings from vim and helix.
 
 ### ❗ If you have suggestions, fell free to report it [here](https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode/issues/new/choose). This would help me a lot.
 
@@ -86,4 +86,4 @@ If you want a build of Yellowed you can find it in the release section or in the
 ## ❓ How to install ?
 To install, open visual studio code and go to the extention menu. Click on the three dots and click on `Install from VSIX` and choose the `keybinded-X.X.X.vsix` file. Or just install it on the market place.
 
-### 🗒️ You can find my Visual Studio Code configuraton [here](https://github.com/Gael-Lopes-Da-Silva/MyVscodeConfig).
+#### 🗒️ You can find my Visual Studio Code configuraton [here](https://github.com/Gael-Lopes-Da-Silva/MyVscodeConfig).
