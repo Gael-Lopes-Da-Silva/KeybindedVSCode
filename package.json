@@ -260,7 +260,7 @@
 	"description": "An ALT based keybinding",
 	"displayName": "Keybinded",
 	"engines": {
-		"vscode": "^1.86.0"
+		"vscode": "^1.84.0"
 	},
 	"galleryBanner": {
 		"color": "#ffd900",
@@ -284,5 +284,5 @@
 		"package": "vsce package -o build",
 		"publish": "vsce publish"
 	},
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
