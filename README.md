@@ -11,7 +11,7 @@
 <div align="center">
     <img src="https://img.shields.io/visual-studio-marketplace/r/gael-lopes-da-silva.keybinded?style=for-the-badge&labelColor=000000" alt="">
     <img src="https://img.shields.io/visual-studio-marketplace/d/gael-lopes-da-silva.keybinded?style=for-the-badge&labelColor=000000" alt="">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/gael-lopes-da-silva.keybinded?style=for-the-badge&labelColor=000000" alt="">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/gael-lopes-da-silva.keybinded?style=for-the-badge&labelColor=000000" alt="">
 </div>
 
 <div align="center">
@@ -20,11 +20,11 @@
     </a>
 </div>
 
-### 🗒️ Keybinded is a simple keybinding based on the ALT key. It take inspiration of some keybindings from vim and helix.
+### Keybinded is a simple keybinding based on the ALT key. It take inspiration of some keybindings from vim and helix.
 
-### ❗ If you have suggestions, fell free to report it [here](https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode/issues/new/choose). This would help me a lot.
+### If you have suggestions, fell free to report it [here](https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode/issues/new/choose). This would help me a lot.
 
-## ⚙️ Keybinding
+## Keybinding
 |   Keybinding    | Description                                  |
 | :-------------: | :------------------------------------------- |
 |      alt+j      | cursorDown                                   |
@@ -39,6 +39,17 @@
 |      alt+k      | workbench.action.quickOpenSelectPrevious     |
 |      alt+j      | selectNextSuggestion                         |
 |      alt+k      | selectPrevSuggestion                         |
+|      alt+j      | list.focusDown                               |
+|      alt+k      | list.focusUp                                 |
+|      alt+j      | selectNextCodeAction                         |
+|      alt+k      | selectPrevCodeAction                         |
+|      alt+j      | showNextParameterHint                        |
+|      alt+k      | showPrevParameterHint                        |
+|      alt+l      | explorer.openAndPassFocus                    |
+|      alt+l      | list.select                                  |
+|      alt+l      | list.stickyScrollselect                      |
+|      alt+l      | acceptSelectedCodeAction                     |
+|      alt+l      | acceptSelectedSuggestion                     |
 |      alt+b      | cursorWordLeft                               |
 |      alt+f      | actions.find                                 |
 |      alt+d      | deleteRight                                  |
@@ -80,10 +91,8 @@
 |      alt+o      | editor.action.insertLineAfter                |
 |   alt+shift+o   | editor.action.insertLineBefore               |
 
-## 🧱 How to build ?
+## How to build ?
 If you want a build of Yellowed you can find it in the release section or in the [build](./build/) folder. Else use `vsce package` in the project folder.
 
-## ❓ How to install ?
+## How to install ?
 To install, open visual studio code and go to the extention menu. Click on the three dots and click on `Install from VSIX` and choose the `keybinded-X.X.X.vsix` file. Or just install it on the market place.
-
-#### 🗒️ You can find my Visual Studio Code configuraton [here](https://github.com/Gael-Lopes-Da-Silva/MyVscodeConfig).

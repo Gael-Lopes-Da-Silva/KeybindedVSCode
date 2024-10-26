@@ -4,9 +4,12 @@
 
 ---
 
-### 🗒️ All changes related to Keybinded will be writen here.
+### All changes related to Keybinded will be writen here.
 
 ---
+
+### 0.0.2 - 0.0.3
+- Added better support for explorer and list menu
 
 ### 0.0.1
 - Initial release

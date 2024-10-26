@@ -1,6 +1,6 @@
 .github/
-.gitignore
 .vscode/
+.gitignore
 build/
 node_modules/
 package-lock.json

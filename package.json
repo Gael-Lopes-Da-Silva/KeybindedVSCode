@@ -1,100 +1,349 @@
 {
-	"activationEvents": [
-		"onDidChangeConfiguration",
-		"onStartupFinished"
-	],
-	"bugs": "https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode/issues/new/choose",
-	"categories": [
-		"Keymaps"
-	],
-	"contributes": {
-		"commands": [
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterInsertMode",
-				"title": "Enter Insert Mode"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterNormalMode",
-				"title": "Enter Normal Mode"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterSelectMode",
-				"title": "Enter Select Mode"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterSearchMode",
-				"title": "Enter Search Mode"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterWordMotion",
-				"title": "Enter Word Motion"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterCharMotion",
-				"title": "Enter Char Motion"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterSmallWordMotion",
-				"title": "Enter Small Word Motion"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterBigWordMotion",
-				"title": "Enter Big Word Motion"
-			},
-			{
-				"category": "Keybinded",
-				"command": "keybinded.enterLineMotion",
-				"title": "Enter Line Motion"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "keybinded.enterNormalMode",
-				"key": "escape",
-				"when": "editorTextFocus && (keybinded.mode == 'INSERT' || keybinded.mode == 'SELECT' || keybinded.mode == 'SEARCH')"
-			}
-		]
-	},
-	"description": "An ALT based keybinding",
-	"devDependencies": {
-		"@types/node": "18.x",
-		"@types/vscode": "^1.84.0",
-		"vsce": "^2.15.0"
-	},
-	"displayName": "Keybinded",
-	"engines": {
-		"vscode": "^1.84.0"
-	},
-	"galleryBanner": {
-		"color": "#ffd900",
-		"theme": "dark"
-	},
-	"icon": "resources/logo.png",
-	"keywords": [
-		"keybinding",
-		"keybinded",
-		"shortcut"
-	],
-	"license": "LICENSE.md",
-	"main": "src/extension.js",
-	"markdown": "github",
-	"name": "keybinded",
-	"publisher": "gael-lopes-da-silva",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode"
-	},
-	"scripts": {
-		"package": "vsce package -o build",
-		"publish": "vsce publish"
-	},
-	"version": "0.0.2"
+    "bugs": "https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode/issues/new/choose",
+    "categories": [
+        "Keymaps"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "command": "cursorDown",
+                "key": "alt+j",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorUp",
+                "key": "alt+k",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorLeft",
+                "key": "alt+h",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorRight",
+                "key": "alt+l",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorDownSelect",
+                "key": "alt+shift+j",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorUpSelect",
+                "key": "alt+shift+k",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorLeftSelect",
+                "key": "alt+shift+h",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorRightSelect",
+                "key": "alt+shift+l",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "workbench.action.quickOpenSelectNext",
+                "key": "alt+j",
+                "when": "inQuickOpen"
+            },
+            {
+                "command": "workbench.action.quickOpenSelectPrevious",
+                "key": "alt+k",
+                "when": "inQuickOpen"
+            },
+            {
+                "command": "selectNextSuggestion",
+                "key": "alt+j",
+                "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+            },
+            {
+                "command": "selectPrevSuggestion",
+                "key": "alt+k",
+                "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+            },
+            {
+                "command": "list.focusDown",
+                "key": "alt+j",
+                "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+            },
+            {
+                "command": "list.focusUp",
+                "key": "alt+k",
+                "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+            },
+            {
+                "command": "selectNextCodeAction",
+                "key": "alt+j",
+                "when": "codeActionMenuVisible"
+            },
+            {
+                "command": "selectPrevCodeAction",
+                "key": "alt+k",
+                "when": "codeActionMenuVisible"
+            },
+            {
+                "command": "showNextParameterHint",
+                "key": "alt+j",
+                "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+            },
+            {
+                "command": "showPrevParameterHint",
+                "key": "alt+k",
+                "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+            },
+            {
+                "command": "explorer.openAndPassFocus",
+                "key": "alt+l",
+                "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+            },
+            {
+                "command": "list.select",
+                "key": "alt+l",
+                "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+            },
+            {
+                "command": "list.stickyScrollselect",
+                "key": "alt+l",
+                "when": "treestickyScrollFocused"
+            },
+            {
+                "command": "acceptSelectedCodeAction",
+                "key": "alt+l",
+                "when": "codeActionMenuVisible"
+            },
+            {
+                "command": "acceptSelectedSuggestion",
+                "key": "alt+l",
+                "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+            },
+            {
+                "command": "cursorWordLeft",
+                "key": "alt+b",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "actions.find",
+                "key": "alt+f",
+                "when": "editorFocus || editorIsOpen"
+            },
+            {
+                "command": "deleteRight",
+                "key": "alt+d",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "deleteInsideWord",
+                "key": "alt+shift+d",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorWordRight",
+                "key": "alt+w",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorWordLeftSelect",
+                "key": "alt+shift+b",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorWordRightSelect",
+                "key": "alt+shift+w",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "workbench.action.toggleSidebarVisibility",
+                "key": "alt+a"
+            },
+            {
+                "command": "editor.action.addSelectionToNextFindMatch",
+                "key": "alt+s",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "editor.action.triggerParameterHints",
+                "key": "alt+shift+f",
+                "when": "editorHasSignatureHelpProvider && editorTextFocus"
+            },
+            {
+                "command": "expandLineSelection",
+                "key": "alt+x",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "workbench.action.terminal.toggleTerminal",
+                "key": "alt+n",
+                "when": "terminal.active"
+            },
+            {
+                "command": "editor.action.clipboardPasteAction",
+                "key": "alt+p"
+            },
+            {
+                "command": "editor.action.clipboardCopyAction",
+                "key": "alt+y"
+            },
+            {
+                "command": "workbench.action.quickOpen",
+                "key": "alt+i"
+            },
+            {
+                "command": "editor.action.commentLine",
+                "key": "alt+/",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.triggerSuggest",
+                "key": "alt+'",
+                "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+            },
+            {
+                "command": "toggleSuggestionDetails",
+                "key": "alt+'",
+                "when": "suggestWidgetVisible && textInputFocus"
+            },
+            {
+                "command": "undo",
+                "key": "alt+u"
+            },
+            {
+                "command": "cursorPageUp",
+                "key": "alt+e",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorPageDown",
+                "key": "alt+q",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "redo",
+                "key": "alt+shift+u"
+            },
+            {
+                "command": "editor.action.showDefinitionPreviewHover",
+                "key": "alt+g alt+f",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "workbench.view.explorer",
+                "key": "alt+g alt+e",
+                "when": "viewContainer.workbench.view.explorer.enabled"
+            },
+            {
+                "command": "workbench.view.scm",
+                "key": "alt+g alt+t",
+                "when": "workbench.scm.active"
+            },
+            {
+                "command": "workbench.action.toggleActivityBarVisibility",
+                "key": "alt+g alt+b"
+            },
+            {
+                "command": "workbench.action.toggleZenMode",
+                "key": "alt+g alt+z"
+            },
+            {
+                "command": "cursorEnd",
+                "key": "alt+g alt+l",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorHome",
+                "key": "alt+g alt+h",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorTop",
+                "key": "alt+g alt+k",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorBottom",
+                "key": "alt+g alt+j",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "workbench.action.gotoLine",
+                "key": "alt+g alt+g"
+            },
+            {
+                "command": "editor.action.jumpToBracket",
+                "key": "alt+\\",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "editor.action.insertLineAfter",
+                "key": "alt+enter",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.insertLineBefore",
+                "key": "alt+shift+enter",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.deleteLines",
+                "key": "alt+backspace",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "editor.action.insertCursorBelow",
+                "key": "alt+c",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "editor.action.insertCursorAbove",
+                "key": "alt+shift+c",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "editor.action.insertLineAfter",
+                "key": "alt+o",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.insertLineBefore",
+                "key": "alt+shift+o",
+                "when": "editorTextFocus && !editorReadonly"
+            }
+        ]
+    },
+    "description": "An alt based keybinding",
+    "devDependencies": {
+        "@types/node": "18.x",
+        "@types/vscode": "^1.84.0",
+        "vsce": "^2.15.0"
+    },
+    "displayName": "Keybinded",
+    "engines": {
+        "vscode": "^1.84.0"
+    },
+    "galleryBanner": {
+        "color": "#ffd900",
+        "theme": "dark"
+    },
+    "icon": "resources/logo.png",
+    "keywords": [
+        "keybinding",
+        "keybinded",
+        "shortcut"
+    ],
+    "license": "LICENSE.md",
+    "markdown": "github",
+    "name": "keybinded",
+    "publisher": "gael-lopes-da-silva",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode"
+    },
+    "scripts": {
+        "package": "vsce package -o build",
+        "publish": "vsce publish"
+    },
+    "version": "0.0.3"
 }
