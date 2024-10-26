@@ -121,6 +121,11 @@
                 "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
             },
             {
+                "key": "alt+l",
+                "command": "workbench.action.acceptSelectedQuickOpenItem",
+                "when": "inQuickOpen"
+            },
+            {
                 "command": "cursorWordLeft",
                 "key": "alt+b",
                 "when": "textInputFocus"
@@ -345,5 +350,5 @@
         "package": "vsce package -o build",
         "publish": "vsce publish"
     },
-    "version": "0.0.3"
+    "version": "0.0.4"
 }

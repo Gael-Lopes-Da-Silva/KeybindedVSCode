@@ -8,6 +8,9 @@
 
 ---
 
+### 0.0.4
+- Better menu navigation
+
 ### 0.0.2 - 0.0.3
 - Added better support for explorer and list menu
 
