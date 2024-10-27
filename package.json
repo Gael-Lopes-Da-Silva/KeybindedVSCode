@@ -315,6 +315,10 @@
                 "command": "editor.action.insertLineBefore",
                 "key": "alt+shift+o",
                 "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "alt+shift+r",
+                "command": "workbench.action.reloadWindow"
             }
         ]
     },
@@ -350,5 +354,5 @@
         "package": "vsce package -o build",
         "publish": "vsce publish"
     },
-    "version": "0.0.4"
+    "version": "0.0.5"
 }

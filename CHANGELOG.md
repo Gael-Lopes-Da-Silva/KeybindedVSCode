@@ -8,6 +8,9 @@
 
 ---
 
+### 0.0.5
+- Added reload keybinding
+
 ### 0.0.4
 - Better menu navigation
 
