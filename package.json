@@ -121,8 +121,8 @@
                 "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
             },
             {
-                "key": "alt+l",
                 "command": "workbench.action.acceptSelectedQuickOpenItem",
+                "key": "alt+l",
                 "when": "inQuickOpen"
             },
             {
@@ -317,16 +317,14 @@
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
-                "key": "alt+shift+r",
-                "command": "workbench.action.reloadWindow"
+                "command": "workbench.action.reloadWindow",
+                "key": "alt+shift+r"
             }
         ]
     },
     "description": "An alt based keybinding",
     "devDependencies": {
-        "@types/node": "18.x",
-        "@types/vscode": "^1.84.0",
-        "vsce": "^2.15.0"
+        "@vscode/vsce": "^3.2.1"
     },
     "displayName": "Keybinded",
     "engines": {
