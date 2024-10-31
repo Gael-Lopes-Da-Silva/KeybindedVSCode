@@ -8,6 +8,9 @@
 
 ---
 
+### 0.0.6
+- Updated README
+
 ### 0.0.5
 - Added reload keybinding
 

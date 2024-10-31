@@ -354,5 +354,5 @@
         "package": "vsce package -o build",
         "publish": "vsce publish"
     },
-    "version": "0.0.5"
+    "version": "0.0.6"
 }

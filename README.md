@@ -6,6 +6,10 @@
 	<img width="400px" src="./resources/logo.png" alt="">
 </div>
 
+<div align="center">
+    <a href="https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode">https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode</a>
+</div>
+
 <br>
 
 <div align="center">
@@ -20,11 +24,18 @@
     </a>
 </div>
 
-### Keybinded is a simple keybinding based on the ALT key. It take inspiration of some keybindings from vim and helix.
 
-### If you have suggestions, fell free to report it [here](https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode/issues/new/choose). This would help me a lot.
+Description
+------------------------------------------------------------------
 
-## Keybinding
+Keybinded is a simple keybinding based on the ALT key. It take inspiration of some keybindings from vim and helix.
+
+If you have suggestions, fell free to report it [here](https://github.com/Gael-Lopes-Da-Silva/KeybindedVSCode/issues/new/choose). This would help me a lot.
+
+
+Keybindings
+------------------------------------------------------------------
+
 |   Keybinding    | Description                                  |
 | :-------------: | :------------------------------------------- |
 |      alt+j      | cursorDown                                   |
@@ -92,8 +103,14 @@
 |   alt+shift+o   | editor.action.insertLineBefore               |
 |   alt+shift+r   | workbench.action.reloadWindow                |
 
-## How to build ?
+
+How to build
+------------------------------------------------------------------
+
 If you want a build of Keybinded you can find it in the release section or in the [build](./build/) folder. Else use `vsce package` in the project folder.
 
-## How to install ?
+
+How to install
+------------------------------------------------------------------
+
 To install, open visual studio code and go to the extention menu. Click on the three dots and click on `Install from VSIX` and choose the `keybinded-X.X.X.vsix` file. Or just install it on the market place.
