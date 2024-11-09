@@ -1,6 +1,8 @@
-.github/
-.vscode/
-.gitignore
-build/
-node_modules/
-package-lock.json
+*
+*/**
+
+!resources/*
+!CHANGELOG.md
+!LICENSE.md
+!package.json
+!README.md
