@@ -11,6 +11,22 @@
     "contributes": {
         "keybindings": [
             {
+                "key": "shift shift",
+                "command": "workbench.action.showCommands"
+            },
+            {
+                "key": "ctrl+0 ctrl+0",
+                "command": "editor.action.fontZoomReset"
+            },
+            {
+                "key": "ctrl+=",
+                "command": "editor.action.fontZoomIn"
+            },
+            {
+                "key": "ctrl+-",
+                "command": "editor.action.fontZoomOut"
+            },
+            {
                 "command": "cursorDown",
                 "key": "alt+j",
                 "when": "textInputFocus"
@@ -324,6 +340,16 @@
             {
                 "command": "workbench.action.reloadWindow",
                 "key": "alt+shift+r"
+            },
+            {
+                "key": "alt+shift+up",
+                "command": "editor.action.copyLinesUpAction",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "alt+shift+down",
+                "command": "editor.action.copyLinesDownAction",
+                "when": "editorTextFocus && !editorReadonly"
             }
         ]
     },
@@ -357,5 +383,5 @@
         "package": "vsce package -o build",
         "publish": "vsce publish"
     },
-    "version": "0.0.7"
+    "version": "0.0.8"
 }

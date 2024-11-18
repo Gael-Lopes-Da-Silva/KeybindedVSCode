@@ -38,6 +38,10 @@ Keybindings
 
 |   Keybinding    | Description                                  |
 | :-------------: | :------------------------------------------- |
+|   shift shift   | workbench.action.showCommands                |
+|  ctrl+0 ctrl+0  | editor.action.fontZoomReset                  |
+|     ctrl+=      | editor.action.fontZoomIn                     |
+|     ctrl+-      | editor.action.fontZoomOut                    |
 |      alt+j      | cursorDown                                   |
 |      alt+k      | cursorUp                                     |
 |      alt+h      | cursorLeft                                   |
@@ -61,6 +65,7 @@ Keybindings
 |      alt+l      | list.stickyScrollselect                      |
 |      alt+l      | acceptSelectedCodeAction                     |
 |      alt+l      | acceptSelectedSuggestion                     |
+|      alt+l      | workbench.action.acceptSelectedQuickOpenItem |
 |      alt+b      | cursorWordLeft                               |
 |      alt+f      | actions.find                                 |
 |      alt+d      | deleteRight                                  |
@@ -102,6 +107,8 @@ Keybindings
 |      alt+o      | editor.action.insertLineAfter                |
 |   alt+shift+o   | editor.action.insertLineBefore               |
 |   alt+shift+r   | workbench.action.reloadWindow                |
+|  alt+shift+up   | editor.action.copyLinesUpAction              |
+| alt+shift+down  | editor.action.copyLinesDownAction            |
 
 
 How to build
